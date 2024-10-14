@@ -10969,7 +10969,7 @@ html {
 
 .masthead {
   /** padding-top: calc(1rem + 17px); **/
-  padding-bottom: 8rem;
+  padding-bottom: 10rem;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -10985,7 +10985,7 @@ html {
 @media (min-width: 992px) {
   .masthead {
     /** padding-top: calc(6rem + 104px); **/
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
   }
   .masthead .masthead-heading {
     font-size: 4rem;

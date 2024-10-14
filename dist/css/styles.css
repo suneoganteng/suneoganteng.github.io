@@ -10968,7 +10968,7 @@ html {
 }
 
 .masthead {
-  padding-top: calc(2rem + 74px);
+  padding-top: calc(1rem + 17px);
   padding-bottom: 2rem;
 }
 .masthead .masthead-heading {

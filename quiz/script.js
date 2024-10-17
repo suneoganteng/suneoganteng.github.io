@@ -5,9 +5,10 @@ const quizData = [
     answer: 'Meningkatkan keterampilan sosial dan emosional anak',
   },
   {
-    question: 'What is the largest planet in our solar system?',
-    options: ['Mars1', 'Saturn', 'Jupiter', 'Neptune'],
-    answer: 'Jupiter',
+    question: 'Kurikulum PAUD menekankan pada pendekatan pembelajaran yang bersifat...?',
+    options: ['Tematik dan berbasis pengalaman langsung', 'Formal dan berbasis hafalan', 'Kompetitif dengan standar akademik tinggi
+', 'Berorientasi pada hasil ujian', 'Bebas tanpa aturan dan jadwal yang jelas'],
+    answer: 'Tematik dan berbasis pengalaman langsung',
   },
   {
     question: 'Which country won the FIFA World Cup in 2018?',

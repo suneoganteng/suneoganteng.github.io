@@ -6,7 +6,7 @@ const quizData = [
   },
   {
     question: 'What is the largest planet in our solar system?',
-    options: ['Mars', 'Saturn', 'Jupiter', 'Neptune'],
+    options: ['Mars1', 'Saturn', 'Jupiter', 'Neptune'],
     answer: 'Jupiter',
   },
   {

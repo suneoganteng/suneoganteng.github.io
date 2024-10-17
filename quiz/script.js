@@ -6,8 +6,7 @@ const quizData = [
   },
   {
     question: 'Kurikulum PAUD menekankan pada pendekatan pembelajaran yang bersifat...?',
-    options: ['Tematik dan berbasis pengalaman langsung', 'Formal dan berbasis hafalan', 'Kompetitif dengan standar akademik tinggi
-', 'Berorientasi pada hasil ujian', 'Bebas tanpa aturan dan jadwal yang jelas'],
+    options: ['Tematik dan berbasis pengalaman langsung', 'Formal dan berbasis hafalan', 'Kompetitif dengan standar akademik tinggi', 'Berorientasi pada hasil ujian', 'Bebas tanpa aturan dan jadwal yang jelas'],
     answer: 'Tematik dan berbasis pengalaman langsung',
   },
   {

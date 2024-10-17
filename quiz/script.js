@@ -1,8 +1,8 @@
 const quizData = [
   {
-    question: 'What is the capital of France?',
-    options: ['Paris', 'London', 'Berlin', 'Madrid'],
-    answer: 'Paris',
+    question: 'Apa tujuan utama dari kurikulum PAUD?',
+    options: ['Memberikan pengetahuan akademik mendalam pada anak-anak', 'Meningkatkan keterampilan sosial dan emosional anak', 'Menyiapkan anak untuk mengikuti ujian nasional', 'Mengajarkan mata pelajaran sekolah dasar lebih awal', 'Memberikan pemahaman tentang pendidikan tinggi sejak dini'],
+    answer: 'Meningkatkan keterampilan sosial dan emosional anak',
   },
   {
     question: 'What is the largest planet in our solar system?',

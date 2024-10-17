@@ -1,24 +1,11 @@
 const quizData = [
-  {
-    question: 'Apa tujuan utama dari kurikulum PAUD?',
-    options: ['Memberikan pengetahuan akademik mendalam pada anak-anak', 'Meningkatkan keterampilan sosial dan emosional anak', 'Menyiapkan anak untuk mengikuti ujian nasional', 'Mengajarkan mata pelajaran sekolah dasar lebih awal', 'Memberikan pemahaman tentang pendidikan tinggi sejak dini'],
-    answer: 'Meningkatkan keterampilan sosial dan emosional anak',
-  },
+ 
   {
     question: 'Kurikulum PAUD menekankan pada pendekatan pembelajaran yang bersifat...?',
     options: ['Tematik dan berbasis pengalaman langsung', 'Formal dan berbasis hafalan', 'Kompetitif dengan standar akademik tinggi', 'Berorientasi pada hasil ujian', 'Bebas tanpa aturan dan jadwal yang jelas'],
     answer: 'Tematik dan berbasis pengalaman langsung',
   },
-  {
-    question: 'Dalam kurikulum PAUD, aspek perkembangan manakah yang paling ditekankan?',
-    options: ['Perkembangan kognitif saja', 'Perkembangan fisik saja', 'Perkembangan holistik: fisik, kognitif, sosial, dan emosional', 'Perkembangan akademik dan kognitif', ' Perkembangan keterampilan motorik saja'],
-    answer: 'Perkembangan holistik: fisik, kognitif, sosial, dan emosional',
-  },
-  {
-    question: 'Apa peran utama guru PAUD dalam pembelajaran berbasis kurikulum?',
-    options: ['Memberikan materi pelajaran yang sama setiap hari', 'Mengawasi anak-anak agar mereka tetap tenang di kelas', 'Mengembangkan kreativitas dan keingintahuan anak melalui permainan terarah', 'Mengajarkan mata pelajaran akademik seperti matematika dan sains', 'Mengutamakan hafalan dan penguasaan materi akademik'],
-    answer: 'Mengembangkan kreativitas dan keingintahuan anak melalui permainan terarah',
-  },
+  
   {
     question: 'Menurut prinsip dasar pengembangan kurikulum PAUD, pembelajaran pada anak usia dini harus bersifat...',
     options: [
@@ -82,22 +69,7 @@ const quizData = [
     options: ['Anak diminta menghafal materi dari internet', 'Guru menggunakan video interaktif untuk memperkenalkan konsep-konsep dasar', 'Setiap anak diwajibkan memiliki laptop sendiri', 'Menggunakan perangkat lunak yang kompleks dan berteknologi tinggi', 'Menggantikan seluruh metode pembelajaran manual dengan digital'],
     answer: 'Guru menggunakan video interaktif untuk memperkenalkan konsep-konsep dasar',
   },
-     {
-    question: 'Bagaimana sebaiknya guru PAUD menilai efektivitas penggunaan TIK dalam pembelajaran?',
-    options: ['Berdasarkan seberapa lama anak menggunakan teknologi', 'Berdasarkan keterampilan teknologi yang dikuasai anak', 'Berdasarkan seberapa terlibat dan aktifnya anak saat menggunakan TIK', 'Berdasarkan seberapa banyak aplikasi yang digunakan dalam sehari', ' Berdasarkan nilai ujian teknologi anak'],
-    answer: 'Berdasarkan seberapa terlibat dan aktifnya anak saat menggunakan TIK',
-  },
-   {
-    question: 'Mengapa penting bagi guru PAUD untuk mengintegrasikan TIK dengan pembelajaran tematik?',
-    options: ['Agar anak lebih siap menggunakan teknologi di tingkat pendidikan yang lebih tinggi', 'Untuk mempermudah pengajaran topik-topik yang rumit', 'Untuk memfasilitasi pembelajaran yang kontekstual dan relevan bagi anak usia dini', 'Agar semua aspek pembelajaran bersifat digital', 'Untuk menghilangkan penggunaan media pembelajaran tradisional'],
-    answer: ' Untuk memfasilitasi pembelajaran yang kontekstual dan relevan bagi anak usia dini',
-  },  
-   {
-    question: 'Apa langkah pertama yang dapat dilakukan guru PAUD untuk mengembangkan kompetensi profesionalnya?',
-    options: ['Menghafal teori pendidikan lama', ' Berpartisipasi dalam pelatihan atau seminar pendidikan', 'Menunggu arahan dari kepala sekolah', 'Menghindari penggunaan metode baru dalam pengajaran', 'Fokus hanya pada pengalaman mengajar yang sudah dikuasai'],
-    answer: 'Berpartisipasi dalam pelatihan atau seminar Pendidikan',
-  }, 
-];
+       ];
 
 const quizContainer = document.getElementById('quiz');
 const resultContainer = document.getElementById('result');

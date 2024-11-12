@@ -10986,6 +10986,7 @@ html {
   .masthead {
     /** padding-top: calc(6rem + 104px); **/
     padding-bottom: 6rem;
+      padding-top: 5rem;
   }
   .masthead .masthead-heading {
     font-size: 4rem;

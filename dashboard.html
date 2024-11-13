@@ -394,7 +394,20 @@
                                     <!-- MASUKAN DISINI-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">REFLEKSI DIRI</h2>
                                     <!-- END MASUKAN DISINI-->
-                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdp4fvs2WA70L8E_zpOo77g1zpbhJB3C_DaVVt52hq_S9vTLQ/viewform?embedded=true" width="640" height="12199" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                    <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSdp4fvs2WA70L8E_zpOo77g1zpbhJB3C_DaVVt52hq_S9vTLQ/viewform?embedded=true" width="640" height="12199" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                    <script>
+var load = 0;
+
+document.getElementById('gform').onload = function(){
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        document.location = "https://www.basiru.my.id/dashboard.html";
+    }
+}
+</script>
+
 								</div>
                                  		</div>
 						</div>

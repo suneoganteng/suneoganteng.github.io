@@ -235,6 +235,7 @@ document.getElementById('gform').onload = function(){
                         <!-- to get an API token!-->
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
+                            <form name="KontakBasiru">
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Full name</label>
@@ -243,7 +244,7 @@ document.getElementById('gform').onload = function(){
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
+                                <label for="email" >Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
@@ -490,5 +491,17 @@ document.getElementById('gform').onload = function(){
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby_4PJMx2ux0-an1H_y8TsC3FWmxuvLNncD3-F4DaqBN3wyfpp6wdwdheVYBXyBXjzvDA/exec'
+  const form = document.forms['KontakBasiru']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+            
     </body>
 </html>

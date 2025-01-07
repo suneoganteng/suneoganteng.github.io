@@ -472,11 +472,22 @@ document.getElementById('gform').onload = function(){
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxlN01xxFkeJk6g4cnOElD0PlulRB6En44g3nepmS8CNWb8_ZbZ9n_Ffq-ewBvdSlJ2AQ/exec';
   const form = document.forms['KontakBasiru'];
-
+   const btnKirim = document.querySelector('.btn-kirim');
+   const btnLoading = document.querySelector('.btn-loading');
+   const myAlert = document.querySelector('.my-alert');
   form.addEventListener('submit', e => {
-    e.preventDefault()
+    e.preventDefault();
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          myAlert.classList.toggle('d-none');
+          // Reset Formnya
+          form.reset();
+         console.log('Success!', response);
+      })
       .catch(error => console.error('Error!', error.message))
   })
 </script>

@@ -1,3 +1,4 @@
+// quiz/script.js
 const quizData = [
  
   {

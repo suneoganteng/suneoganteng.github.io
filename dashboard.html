@@ -27,27 +27,34 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">PRAKTIK BAIK</a></li>
+                        <li class="nav-item dropdown mx-0 mx-lg-1">
+                            <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" href="#" id="programDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-graduation-cap"></i> PROGRAM
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="programDropdown">
+                                <li><a class="dropdown-item" href="./praktik-baik.html"><i class="fas fa-users"></i> Praktik Baik</a></li>
+                                <li><a class="dropdown-item" href="./perpustakaan.html"><i class="fas fa-book"></i> Perpustakaan</a></li>
+                                <li><a class="dropdown-item" href="./buku-digital.html"><i class="fas fa-tablet-alt"></i> Buku Digital</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">VIDEO</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#buku">Perpustakaan</a></li>
-                          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#bukusaku">Buku Saku</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#refleksi">Refleksi Diri</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                      
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./quiz">
+                            <i class="fas fa-question-circle"></i> Quiz
+                        </a></li>
                     </ul>
                 </div>
             </div>
         </nav>
           
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <header class="masthead text-white text-center" style="background: linear-gradient(rgba(26, 188, 156, 0.8), rgba(22, 160, 133, 0.8)), url('./src/assets/basirubg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
             <div class="container d-flex align-items-center flex-column">
-            
-                          
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="./dist/assets/img/logobasiru.png" alt="..." />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">BASIRU </h1>
+                <h1 class="masthead-heading text-uppercase mb-0" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">BASIRU </h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -55,121 +62,353 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">PENGEMBANGAN KOMPETENSI GURU</p>
+                <p class="masthead-subheading font-weight-light mb-0" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">PENGEMBANGAN KOMPETENSI GURU</p>
+                <!-- Motto-->
+                <p class="masthead-motto font-weight-light mb-4 mt-3" style="font-style: italic; font-size: 1.1rem; color: rgba(255,255,255,0.95); text-shadow: 1px 1px 2px rgba(0,0,0,0.5); background: rgba(0,0,0,0.2); padding: 10px 20px; border-radius: 25px; display: inline-block;">
+                    "Aku bukan hanya mengajar, aku sedang menanam masa depan"
+                </p>
             </div>
         </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+
+        <!-- Carousel Section -->
+        <section class="py-5" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);">
             <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">PRAKTIK BAIK</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="display-4 fw-bold text-white mb-3">Galeri BASIRU</h2>
+                        <p class="lead text-white-50 mx-auto" style="max-width: 600px;">Dokumentasi kegiatan dan momen-momen berharga dalam pengembangan kompetensi guru PAUD</p>
+                    </div>
                 </div>
-                <!-- Portfolio Grid Items-->
+                
                 <div class="row justify-content-center">
-                   <!-- Portfolio Item 1-->
-					<div class="col-md-6 col-lg-4 mb-5">
-						<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-								<div class="portfolio-item-caption-content text-center text-white"></div>
-							</div>
-							<img class="img-fluid" src="./dist/assets/img/portfolio/jurnal1.png" alt="..." />
-						</div>
-					</div>
-					<!-- Portfolio Item 2 -->
-					<div class="col-md-6 col-lg-4 mb-5">
-						<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-								<div class="portfolio-item-caption-content text-center text-white"></div>
-					  </div><img class="img-fluid" src="./dist/assets/img/portfolio/galeri1.png" alt="..."></div>
-					</div>		
-					<!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    <div class="col-lg-10 col-xl-8">
+                        <div id="basiruCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel" data-bs-interval="4000" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);">
+                            <!-- Indicators -->
+                            <div class="carousel-indicators" style="bottom: 20px;">
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="0" class="active" style="background-color: #1abc9c;" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="1" style="background-color: #1abc9c;" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="2" style="background-color: #1abc9c;" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="3" style="background-color: #1abc9c;" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="4" style="background-color: #1abc9c;" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="5" style="background-color: #1abc9c;" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="6" style="background-color: #1abc9c;" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="7" style="background-color: #1abc9c;" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="8" style="background-color: #1abc9c;" aria-label="Slide 9"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="9" style="background-color: #1abc9c;" aria-label="Slide 10"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="10" style="background-color: #1abc9c;" aria-label="Slide 11"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="11" style="background-color: #1abc9c;" aria-label="Slide 12"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="12" style="background-color: #1abc9c;" aria-label="Slide 13"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="13" style="background-color: #1abc9c;" aria-label="Slide 14"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="14" style="background-color: #1abc9c;" aria-label="Slide 15"></button>
+                                <button type="button" data-bs-target="#basiruCarousel" data-bs-slide-to="15" style="background-color: #1abc9c;" aria-label="Slide 16"></button>
                             </div>
-                            <img class="img-fluid" src="./dist/assets/img/portfolio/circus.png" alt="..." />
+                            
+                            <!-- Carousel Items -->
+                            <div class="carousel-inner">
+                                <!-- Slide 1 -->
+                                <div class="carousel-item active">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar1.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 1"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 1</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 2 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar2.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 2"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 2</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 3 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar3.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 3"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 3</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 4 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar4.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 4"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 4</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 5 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar5.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 5"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 5</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 6 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar6.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 6"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 6</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 7 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar7.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 7"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 7</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 8 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar8.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 8"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 8</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 9 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar9.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 9"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 9</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 10 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar10.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 10"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 10</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 11 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar11.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 11"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 11</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 12 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar12.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 12"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 12</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 13 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar13.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 13"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 13</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 14 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar14.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 14"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 14</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 15 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar15.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 15"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 15</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 16 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                                        <img src="./src/assets/img/carousel/gambar16.heic" 
+                                             class="d-block mx-auto rounded-3 shadow" 
+                                             style="max-height: 400px; max-width: 100%; object-fit: contain;" 
+                                             alt="Galeri BASIRU 16"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="d-none justify-content-center align-items-center text-center p-4" style="min-height: 400px;">
+                                            <div>
+                                                <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                                <h4 class="text-muted">Gambar 16</h4>
+                                                <p class="text-muted">Dokumentasi Kegiatan BASIRU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#basiruCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#basiruCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
-					<!-- Portfolio Item 4 -->
-					<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-						<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-								<div class="portfolio-item-caption-content text-center text-white">
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img class="img-fluid" src="./dist/assets/img/portfolio/game.png" alt="..." />
-						</div>
-					</div>
-
-					<!-- Portfolio Item 5 -->
-					<div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-						<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-								<div class="portfolio-item-caption-content text-center text-white">
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img class="img-fluid" src="./dist/assets/img/portfolio/safe.png" alt="..." />
-						</div>
-					</div>
-
-					<!-- Portfolio Item 6 -->
-					<div class="col-md-6 col-lg-4">
-						<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-								<div class="portfolio-item-caption-content text-center text-white">
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img class="img-fluid" src="./dist/assets/img/portfolio/submarine.png" alt="Submarine image" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Portfolio Section-->
-		<!-- About Perpustakaan-->
-        <section class="page-section bg-primary text-white mb-0" id="buku">
-            <div class="container-fluid">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Perpustakaan</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
                 </div>
-                <!-- About Section Content-->
-                <div class="row"></div>
-                    
-               <iframe style="width:100%;height:640px" src="https://fliphtml5.com/bookcase/sxsor/gold"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
-			</div>
-		</section>
+            </div>
+        </section>
 
-        <!-- About Buku Saku-->
-        <section class="page-section bg-primary text-white mb-0" id="bukusaku">
-            <div class="container-fluid">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Buku Saku</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row"></div>
-                    
-               <div style="position:relative;padding-top:max(60%,324px);width:100%;height:0;"><iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://online.fliphtml5.com/afhqr/jurd/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
-			</div>
-		</section>
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
@@ -186,25 +425,25 @@
                     <div class="col"><p class="lead">Video pembelajaran di sini semoga bermanfaat dan dapat dijadikan referensi untuk diterapkan sesuai dengan kebutuhan</p></div>
                     <div class="col"><p class="lead">Jika ada video pembelajaran yang ingin di tampilkan di sini bisa kontak via email ya..</p></div>
                 </div>
-                <div class="row mb-3">
-                    <div class="col">
+                <div class="row mb-3 justify-content-center">
+                    <div class="col-12 text-center">
                         
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WXd1Q7LD0C4?si=c7BVLeji5rXvM7vD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kO3rWVQCAGs?si=QuMZXdMXv7N3kAQX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6J_p1npZY-E?si=iPgudCCnhxC9QRVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6J_p1npZY-E?si=I7wSq2mHCsjmKltr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qRDKU902gqk?si=xVMMaJoRKMsPLyZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vK-pvkmLRpc?si=ylZRG9Gm_LKbgnnj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XfPD3FtNKoY?si=BlA_Ag_0bRO4oG00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UPD1n5RPwhc?si=UgnYU6oCnoXfdqTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/iwhlHWqlXio?si=7rECKq3DoqyVk_w7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/T-BvVkdje7E?si=TYj1b36YDPn3M2-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VP_t7oGF1q8?si=Z92FoE7Prtzh1DiS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/k1sNl_YRN7Q?si=HPk3IGfLEdsvT2ZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QMYj2Dcqe74?si=nrCr9wDjk8OhSlzn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_SSRfWVE41A?si=lgjpNsMw0IWMjdKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WXd1Q7LD0C4?si=c7BVLeji5rXvM7vD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kO3rWVQCAGs?si=QuMZXdMXv7N3kAQX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6J_p1npZY-E?si=iPgudCCnhxC9QRVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6J_p1npZY-E?si=I7wSq2mHCsjmKltr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qRDKU902gqk?si=xVMMaJoRKMsPLyZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vK-pvkmLRpc?si=ylZRG9Gm_LKbgnnj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XfPD3FtNKoY?si=BlA_Ag_0bRO4oG00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UPD1n5RPwhc?si=UgnYU6oCnoXfdqTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iwhlHWqlXio?si=7rECKq3DoqyVk_w7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T-BvVkdje7E?si=TYj1b36YDPn3M2-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VP_t7oGF1q8?si=Z92FoE7Prtzh1DiS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k1sNl_YRN7Q?si=HPk3IGfLEdsvT2ZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QMYj2Dcqe74?si=nrCr9wDjk8OhSlzn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_SSRfWVE41A?si=lgjpNsMw0IWMjdKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
                 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=RRw4oZz2Yk1ADx7k&amp;list=PLSVFfypFuo_orkG1mqjMx1uRZOdnaiGyZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=RRw4oZz2Yk1ADx7k&amp;list=PLSVFfypFuo_orkG1mqjMx1uRZOdnaiGyZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
                 
 				
 	
@@ -218,12 +457,23 @@
                 </div>
             </div>
         </section>
-<!-- About Refleksi-->
-    
+
+        <!-- About Refleksi-->
         <section class="page-section bg-primary text-white mb-0" id="refleksi">
             <div class="container-fluid">
-           <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSdp4fvs2WA70L8E_zpOo77g1zpbhJB3C_DaVVt52hq_S9vTLQ/viewform?embedded=true" width="640" height="12199" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                                    <script>
+                <!-- Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Refleksi Diri</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Centered Form Container -->
+                <div class="d-flex justify-content-center">
+                    <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSdp4fvs2WA70L8E_zpOo77g1zpbhJB3C_DaVVt52hq_S9vTLQ/viewform?embedded=true" width="640" height="12199" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">Loading…</iframe>
+                </div>
+                <script>
 var load = 0;
 
 document.getElementById('gform').onload = function(){
@@ -235,14 +485,9 @@ document.getElementById('gform').onload = function(){
     }
 }
 </script>
+            </div>
+        </section>
 
-								</div>
-                                 		</div>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div> 
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -261,38 +506,136 @@ document.getElementById('gform').onload = function(){
                           <strong>Terima Kasih!</strong>, Pesan anda sudah kami terima.
                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
-                        <form name="KontakBasiru">
+                        <form name="KontakBasiru" class="modern-form">
                             <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="nama" name="nama" type="text" placeholder="Enter your name..." />
-                                <label for="name">Full name</label>
+                            <div class="form-floating mb-4">
+                                <input class="form-control modern-input" id="nama" name="nama" type="text" placeholder="Enter your name..." />
+                                <label for="nama"><i class="fas fa-user me-2"></i>Full name</label>
                             </div>
                             <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" />
-                                <label for="email" >Email address</label>
+                            <div class="form-floating mb-4">
+                                <input class="form-control modern-input" id="email" name="email" type="email" placeholder="name@example.com" />
+                                <label for="email"><i class="fas fa-envelope me-2"></i>Email address</label>
                             </div>
                             <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" />
-                                <label for="phone">Phone number</label>
+                            <div class="form-floating mb-4">
+                                <input class="form-control modern-input" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" />
+                                <label for="phone"><i class="fas fa-phone me-2"></i>Phone number</label>
                             </div>
                             <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
-                                <label for="message">Message</label>
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control modern-input" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 120px; resize: vertical;"></textarea>
+                                <label for="message"><i class="fas fa-comment me-2"></i>Message</label>
                             </div>
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl btn-kirim" type="submit">Send</button>
-                            <button type="button" class="btn btn-secondary btn-xl btn-loading d-none" disabled>Loading...</button>
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-xl btn-kirim modern-button" type="submit">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-xl btn-loading d-none modern-button" disabled>
+                                    <i class="fas fa-spinner fa-spin me-2"></i>Loading...
+                                </button>
+                            </div>
                         </form>
+                        
+                        <style>
+                            .modern-form {
+                                padding: 2rem;
+                                background: rgba(255, 255, 255, 0.05);
+                                border-radius: 15px;
+                                backdrop-filter: blur(10px);
+                                border: 1px solid rgba(255, 255, 255, 0.1);
+                                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                            }
+                            
+                            .modern-input {
+                                background: rgba(255, 255, 255, 0.95) !important;
+                                border: 2px solid #e9ecef;
+                                border-radius: 12px;
+                                padding: 1rem 1.25rem;
+                                font-size: 1rem;
+                                transition: all 0.3s ease;
+                                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+                            }
+                            
+                            .modern-input:focus {
+                                background: rgba(255, 255, 255, 1) !important;
+                                border-color: #1abc9c !important;
+                                box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25), 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+                                transform: translateY(-2px);
+                            }
+                            
+                            .form-floating > label {
+                                color: #6c757d;
+                                font-weight: 500;
+                                padding-left: 1.25rem;
+                            }
+                            
+                            .form-floating > .form-control:focus ~ label {
+                                color: #1abc9c;
+                            }
+                            
+                            .modern-button {
+                                border-radius: 12px;
+                                padding: 1rem 2rem;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                transition: all 0.3s ease;
+                                border: none;
+                                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                            }
+                            
+                            .modern-button:hover {
+                                transform: translateY(-3px);
+                                box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+                            }
+                            
+                            .modern-button:active {
+                                transform: translateY(-1px);
+                            }
+                            
+                            .btn-primary.modern-button {
+                                background: linear-gradient(135deg, #1abc9c, #16a085);
+                            }
+                            
+                            .btn-primary.modern-button:hover {
+                                background: linear-gradient(135deg, #16a085, #138d75);
+                            }
+
+                            /* Dropdown Styling */
+                            .dropdown-menu {
+                                background: #2c3e50;
+                                border: none;
+                                border-radius: 8px;
+                                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                            }
+                            
+                            .dropdown-item {
+                                color: #fff;
+                                padding: 0.75rem 1.5rem;
+                                transition: all 0.3s ease;
+                            }
+                            
+                            .dropdown-item:hover {
+                                background: #1abc9c;
+                                color: #fff;
+                                transform: translateX(5px);
+                            }
+                            
+                            .dropdown-item i {
+                                margin-right: 8px;
+                                width: 16px;
+                            }
+                        </style>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
@@ -327,170 +670,7 @@ document.getElementById('gform').onload = function(){
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; Nila Fitria 2023</small></div>
         </div>
-        <!-- Portfolio 1 Modals-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jurnal Ilmiah</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <div style="position: relative; width: 100%; height: 0; padding-top: 77.2727%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-										<iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://fliphtml5.com/bookcase/lcqqw/red"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div>
-		
-		<!-- Portfolio 2 Modals-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Galery Foto</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-									<div style="position: relative; width: 100%; height: 0; padding-top: 77.2727%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-										<iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-											src="https://www.canva.com/design/DAGSZFfMKN4/8sI8LRacm3pjCnUFirltzA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-										</iframe>
-									</div>
-									<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGSZFfMKN4&#x2F;8sI8LRacm3pjCnUFirltzA&#x2F;view?utm_content=DAGSZFfMKN4&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> by Nila Fitria
-                                    
-                                    <!-- Portfolio Modal - Image-->
-                                   
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div>
-		
-		<!-- Portfolio 3 Modals-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-12">
-                                    <!-- MASUKAN DISINI-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Video Kompetensi</h2>
-                                    <div style="padding: 10px">
-                                        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-                                        <div class="elfsight-app-5b3a81cb-1e37-4396-972a-471f555b23f6" data-elfsight-app-lazy></div>
-                                    </div>
-									<!-- END MASUKAN DISINI-->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div>
-		
-		<!-- Portfolio4 Modals-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-12">
-                                    <!-- MASUKAN DISINI-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">REFLEKSI DIRI</h2>
-                                    <!-- END MASUKAN DISINI-->
-                                    <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSdp4fvs2WA70L8E_zpOo77g1zpbhJB3C_DaVVt52hq_S9vTLQ/viewform?embedded=true" width="640" height="12199" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                                    <script>
-var load = 0;
 
-document.getElementById('gform').onload = function(){
-    /*Execute on every reload on iFrame*/
-    load++;
-    if(load > 3){
-        /*Second reload is a submit*/
-        document.location = "https://www.basiru.my.id/dashboard.html";
-    }
-}
-</script>
-
-								</div>
-                                 		</div>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div>
-		
-		<!-- Portfolio 5 Modals-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-12">
-                                    <!-- MASUKAN DISINI-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">TEST</h2>
-									<!-- END MASUKAN DISINI-->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div>
-		
-		<!-- Portfolio 6 Modals-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-12">
-                                    <!-- MASUKAN DISINI-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">TEST</h2>
-									<!-- END MASUKAN DISINI-->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

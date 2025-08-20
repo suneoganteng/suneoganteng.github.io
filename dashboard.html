@@ -13,8 +13,307 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="./dist/css/styles.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* Enhanced dropdown styling */
+            .dropdown-menu {
+                background: #2c3e50;
+                border: none;
+                border-radius: 8px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                min-width: 200px;
+            }
+            
+            .dropdown-item {
+                color: #fff;
+                padding: 0.75rem 1.5rem;
+                transition: all 0.3s ease;
+                border-radius: 4px;
+                margin: 2px 4px;
+            }
+            
+            .dropdown-item:hover, .dropdown-item:focus {
+                background: #1abc9c;
+                color: #fff;
+                transform: translateX(5px);
+            }
+            
+            .dropdown-item i {
+                margin-right: 8px;
+                width: 16px;
+            }
+
+            /* Mobile responsive fixes */
+            @media (max-width: 991.98px) {
+                .navbar-nav .dropdown-menu {
+                    background: #2c3e50 !important;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+                    border: none !important;
+                    padding: 0.5rem !important;
+                    margin-top: 0.5rem !important;
+                    border-radius: 8px !important;
+                    position: relative !important;
+                    width: 100% !important;
+                }
+                
+                .navbar-nav .dropdown-item {
+                    color: #fff !important;
+                    padding: 0.75rem 1rem !important;
+                    margin: 2px 0 !important;
+                    border-radius: 4px !important;
+                    display: block !important;
+                }
+                
+                .navbar-nav .dropdown-item:hover,
+                .navbar-nav .dropdown-item:focus {
+                    background: #1abc9c !important;
+                    transform: none !important;
+                    color: #fff !important;
+                }
+
+                .dropdown-toggle::after {
+                    margin-left: 0.5rem;
+                }
+            }
+
+            /* Ensure dropdown works on mobile */
+            .navbar-toggler {
+                border: none;
+                padding: 0.25rem 0.5rem;
+            }
+
+            .navbar-toggler:focus {
+                box-shadow: none;
+            }
+
+            /* Basic navbar styling */
+            .navbar {
+                background-color: #2c3e50 !important;
+                padding: 1rem 0;
+            }
+
+            .navbar-brand {
+                color: #fff !important;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            .nav-link {
+                color: #fff !important;
+                padding: 0.5rem 1rem !important;
+                border-radius: 4px;
+                transition: all 0.3s ease;
+            }
+
+            .nav-link:hover {
+                background-color: #1abc9c !important;
+                color: #fff !important;
+            }
+
+            .dropdown-toggle {
+                color: #fff !important;
+            }
+
+            .dropdown-toggle:hover {
+                background-color: #1abc9c !important;
+                color: #fff !important;
+            }
+
+            /* Fix for mobile navbar overlap */
+            @media (max-width: 991.98px) {
+                .masthead {
+                    padding-top: 150px !important;
+                }
+                
+                .navbar {
+                    z-index: 1030;
+                }
+            }
+            
+            /* Ensure proper spacing on all screen sizes */
+            .masthead {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                padding-top: 120px;
+            }
+
+            /* Enhanced dropdown styling */
+            .modern-form {
+                padding: 2rem;
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 15px;
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            }
+            
+            .modern-input {
+                background: rgba(255, 255, 255, 0.95) !important;
+                border: 2px solid #e9ecef;
+                border-radius: 12px;
+                padding: 1rem 1.25rem;
+                font-size: 1rem;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            }
+            
+            .modern-input:focus {
+                background: rgba(255, 255, 255, 1) !important;
+                border-color: #1abc9c !important;
+                box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25), 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+                transform: translateY(-2px);
+            }
+            
+            .form-floating > label {
+                color: #6c757d;
+                font-weight: 500;
+                padding-left: 1.25rem;
+            }
+            
+            .form-floating > .form-control:focus ~ label {
+                color: #1abc9c;
+            }
+            
+            .modern-button {
+                border-radius: 12px;
+                padding: 1rem 2rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: all 0.3s ease;
+                border: none;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+            
+            .modern-button:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+            }
+            
+            .modern-button:active {
+                transform: translateY(-1px);
+            }
+            
+            .btn-primary.modern-button {
+                background: linear-gradient(135deg, #1abc9c, #16a085);
+            }
+            
+            .btn-primary.modern-button:hover {
+                background: linear-gradient(135deg, #16a085, #138d75);
+            }
+
+            /* Page sections styling */
+            .page-section {
+                padding: 6rem 0;
+            }
+
+            .page-section-heading {
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+
+            .divider-custom {
+                margin: 1.25rem 0 1.5rem;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .divider-custom .divider-custom-line {
+                width: 100%;
+                max-width: 7rem;
+                height: 0.25rem;
+                background-color: #2c3e50;
+                border-radius: 1rem;
+                border-color: #2c3e50;
+            }
+
+            .divider-custom .divider-custom-line:first-child {
+                margin-right: 1rem;
+            }
+
+            .divider-custom .divider-custom-line:last-child {
+                margin-left: 1rem;
+            }
+
+            .divider-custom .divider-custom-icon {
+                color: #2c3e50;
+                font-size: 2rem;
+            }
+
+            .divider-custom.divider-light .divider-custom-line {
+                background-color: #fff;
+            }
+
+            .divider-custom.divider-light .divider-custom-icon {
+                color: #fff;
+            }
+
+            .bg-primary {
+                background-color: #1abc9c !important;
+            }
+
+            .bg-secondary {
+                background-color: #2c3e50 !important;
+            }
+
+            .text-primary {
+                color: #1abc9c !important;
+            }
+
+            .text-secondary {
+                color: #2c3e50 !important;
+            }
+
+            .btn-primary {
+                background-color: #1abc9c;
+                border-color: #1abc9c;
+            }
+
+            .btn-outline-light {
+                color: #fff;
+                border-color: #fff;
+            }
+
+            .btn-xl {
+                padding: 1rem 1.75rem;
+                font-size: 1.25rem;
+            }
+
+            .masthead-avatar {
+                width: 15rem;
+            }
+
+            .masthead-heading {
+                font-size: 4rem;
+                line-height: 3.5rem;
+            }
+
+            .masthead-subheading {
+                font-size: 1.5rem;
+            }
+
+            .footer {
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+                background-color: #2c3e50;
+                color: #fff;
+            }
+
+            .copyright {
+                background-color: #1a252f;
+            }
+
+            .btn-social {
+                width: 3.25rem;
+                height: 3.25rem;
+                font-size: 1.25rem;
+                border-radius: 100%;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -27,6 +326,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#carousel-section"><i class="fas fa-images"></i> GALERI</a></li>
                         <li class="nav-item dropdown mx-0 mx-lg-1">
                             <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" href="#" id="programDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-graduation-cap"></i> PROGRAM
@@ -71,7 +371,7 @@
         </header>
 
         <!-- Carousel Section -->
-        <section class="py-5" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);">
+        <section class="py-5" id="carousel-section" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
@@ -105,7 +405,7 @@
                             
                             <!-- Carousel Items -->
                             <div class="carousel-inner">
-                                <!-- Slide 1 -->
+                                <!-- Slides 1-16 -->
                                 <div class="carousel-item active">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar1.heic" 
@@ -123,7 +423,6 @@
                                     </div>
                                 </div>
                                 
-                                <!-- Slide 2 -->
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar2.heic" 
@@ -140,8 +439,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 3 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar3.heic" 
@@ -158,8 +456,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 4 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar4.heic" 
@@ -176,8 +473,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 5 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar5.heic" 
@@ -194,8 +490,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 6 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar6.heic" 
@@ -212,8 +507,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 7 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar7.heic" 
@@ -230,8 +524,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 8 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar8.heic" 
@@ -248,8 +541,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 9 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar9.heic" 
@@ -266,8 +558,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 10 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar10.heic" 
@@ -284,8 +575,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 11 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar11.heic" 
@@ -302,8 +592,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 12 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar12.heic" 
@@ -320,8 +609,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 13 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar13.heic" 
@@ -338,8 +626,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 14 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar14.heic" 
@@ -356,8 +643,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 15 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar15.heic" 
@@ -374,8 +660,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Slide 16 -->
+
                                 <div class="carousel-item">
                                     <div class="d-flex justify-content-center align-items-center" style="min-height: 450px; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
                                         <img src="./src/assets/img/carousel/gambar16.heic" 
@@ -441,12 +726,10 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/VP_t7oGF1q8?si=Z92FoE7Prtzh1DiS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/k1sNl_YRN7Q?si=HPk3IGfLEdsvT2ZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/QMYj2Dcqe74?si=nrCr9wDjk8OhSlzn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_SSRfWVE41A?si=lgjpNsMw0IWMjdKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_SSRfWVE41A?si=lgjpNsMw0IWMjdKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
                 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=RRw4oZz2Yk1ADx7k&amp;list=PLSVFfypFuo_orkG1mqjMx1uRZOdnaiGyZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
-                
-				
-	
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=RRw4oZz2Yk1ADx7k&amp;list=PLSVFfypFuo_orkG1mqjMx1uRZOdnaiGyZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
+                    </div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-5">
@@ -473,18 +756,6 @@
                 <div class="d-flex justify-content-center">
                     <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSdp4fvs2WA70L8E_zpOo77g1zpbhJB3C_DaVVt52hq_S9vTLQ/viewform?embedded=true" width="640" height="12199" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">Loading…</iframe>
                 </div>
-                <script>
-var load = 0;
-
-document.getElementById('gform').onload = function(){
-    /*Execute on every reload on iFrame*/
-    load++;
-    if(load > 3){
-        /*Second reload is a submit*/
-        document.location = "https://www.basiru.my.id/dashboard.html";
-    }
-}
-</script>
             </div>
         </section>
 
@@ -540,97 +811,6 @@ document.getElementById('gform').onload = function(){
                                 </button>
                             </div>
                         </form>
-                        
-                        <style>
-                            .modern-form {
-                                padding: 2rem;
-                                background: rgba(255, 255, 255, 0.05);
-                                border-radius: 15px;
-                                backdrop-filter: blur(10px);
-                                border: 1px solid rgba(255, 255, 255, 0.1);
-                                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-                            }
-                            
-                            .modern-input {
-                                background: rgba(255, 255, 255, 0.95) !important;
-                                border: 2px solid #e9ecef;
-                                border-radius: 12px;
-                                padding: 1rem 1.25rem;
-                                font-size: 1rem;
-                                transition: all 0.3s ease;
-                                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-                            }
-                            
-                            .modern-input:focus {
-                                background: rgba(255, 255, 255, 1) !important;
-                                border-color: #1abc9c !important;
-                                box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25), 0 4px 20px rgba(0, 0, 0, 0.1) !important;
-                                transform: translateY(-2px);
-                            }
-                            
-                            .form-floating > label {
-                                color: #6c757d;
-                                font-weight: 500;
-                                padding-left: 1.25rem;
-                            }
-                            
-                            .form-floating > .form-control:focus ~ label {
-                                color: #1abc9c;
-                            }
-                            
-                            .modern-button {
-                                border-radius: 12px;
-                                padding: 1rem 2rem;
-                                font-weight: 600;
-                                text-transform: uppercase;
-                                letter-spacing: 1px;
-                                transition: all 0.3s ease;
-                                border: none;
-                                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-                            }
-                            
-                            .modern-button:hover {
-                                transform: translateY(-3px);
-                                box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
-                            }
-                            
-                            .modern-button:active {
-                                transform: translateY(-1px);
-                            }
-                            
-                            .btn-primary.modern-button {
-                                background: linear-gradient(135deg, #1abc9c, #16a085);
-                            }
-                            
-                            .btn-primary.modern-button:hover {
-                                background: linear-gradient(135deg, #16a085, #138d75);
-                            }
-
-                            /* Dropdown Styling */
-                            .dropdown-menu {
-                                background: #2c3e50;
-                                border: none;
-                                border-radius: 8px;
-                                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-                            }
-                            
-                            .dropdown-item {
-                                color: #fff;
-                                padding: 0.75rem 1.5rem;
-                                transition: all 0.3s ease;
-                            }
-                            
-                            .dropdown-item:hover {
-                                background: #1abc9c;
-                                color: #fff;
-                                transform: translateX(5px);
-                            }
-                            
-                            .dropdown-item i {
-                                margin-right: 8px;
-                                width: 16px;
-                            }
-                        </style>
                     </div>
                 </div>
             </div>
@@ -673,35 +853,73 @@ document.getElementById('gform').onload = function(){
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="/dist/js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxlN01xxFkeJk6g4cnOElD0PlulRB6En44g3nepmS8CNWb8_ZbZ9n_Ffq-ewBvdSlJ2AQ/exec';
-  const form = document.forms['KontakBasiru'];
-   const btnKirim = document.querySelector('.btn-kirim');
-   const btnLoading = document.querySelector('.btn-loading');
-   const myAlert = document.querySelector('.my-alert');
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    btnLoading.classList.toggle('d-none');
-    btnKirim.classList.toggle('d-none');
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-          btnLoading.classList.toggle('d-none');
-          btnKirim.classList.toggle('d-none');
-          myAlert.classList.toggle('d-none');
-          // Reset Formnya
-          form.reset();
-         console.log('Success!', response);
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+        
+        <script>
+        var load = 0;
+
+        document.getElementById('gform').onload = function(){
+            /*Execute on every reload on iFrame*/
+            load++;
+            if(load > 3){
+                /*Second reload is a submit*/
+                document.location = "https://www.basiru.my.id/dashboard.html";
+            }
+        }
+
+        // Auto-close mobile menu when clicking on menu items
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarCollapse = document.getElementById('navbarResponsive');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const dropdownItems = document.querySelectorAll('.dropdown-item');
+            const programDropdown = document.getElementById('programDropdown');
+            
+            // Close menu when clicking on nav links (except PROGRAM dropdown toggle)
+            navLinks.forEach(function(navLink) {
+                navLink.addEventListener('click', function() {
+                    // Don't close menu if clicking on PROGRAM dropdown toggle
+                    if (navLink === programDropdown) {
+                        return;
+                    }
+                    
+                    if (navbarCollapse.classList.contains('show')) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                        bsCollapse.hide();
+                    }
+                });
+            });
+            
+            // Close menu when clicking on dropdown items
+            dropdownItems.forEach(function(dropdownItem) {
+                dropdownItem.addEventListener('click', function() {
+                    if (navbarCollapse.classList.contains('show')) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        });
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxlN01xxFkeJk6g4cnOElD0PlulRB6En44g3nepmS8CNWb8_ZbZ9n_Ffq-ewBvdSlJ2AQ/exec';
+        const form = document.forms['KontakBasiru'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                btnLoading.classList.toggle('d-none');
+                btnKirim.classList.toggle('d-none');
+                myAlert.classList.toggle('d-none');
+                // Reset Formnya
+                form.reset();
+                console.log('Success!', response);
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+        </script>
             
     </body>
 </html>

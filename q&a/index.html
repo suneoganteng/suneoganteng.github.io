@@ -428,37 +428,4 @@
   <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </div>
 </section>
-                  <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        
-        <script>
-        var load = 0;
-
-        document.getElementById('gform').onload = function(){
-            /*Execute on every reload on iFrame*/
-            load++;
-            if(load > 3){
-                /*Second reload is a submit*/
-                document.location = "https://www.basiru.my.id/dashboard.html";
-            }
-        }
-
-        // Auto-close mobile menu when clicking on menu items
-        document.addEventListener('DOMContentLoaded', function() {
-            const navbarCollapse = document.getElementById('navbarResponsive');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            // Close menu when clicking on nav links
-            navLinks.forEach(function(navLink) {
-                navLink.addEventListener('click', function() {
-                    if (navbarCollapse.classList.contains('show')) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
-                        bsCollapse.hide();
-                    }
-                });
-            });
-        });
-        </script>
-            
-    </body>
-</html>
+                 

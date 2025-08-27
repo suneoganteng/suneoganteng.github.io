@@ -1,4 +1,3 @@
-<!-- FAQ 1 - Bootstrap Brain Component -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="BASIRU.MY.ID" />
         <meta name="author" content="BASIRU.MY.ID" />
-        <title>BASIRU.MY.ID</title>
+        <title>FAQ - BASIRU.MY.ID</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="./dist/assets/logobasiru.ico" />
         <!-- Font Awesome iconss -->
@@ -314,11 +313,41 @@
                 font-size: 1.25rem;
                 border-radius: 100%;
             }
+            
+            /* FAQ Specific Styling */
+            .faq-section {
+                padding: 100px 0 60px;
+                min-height: 100vh;
+            }
+            
+            .faq-accordion .accordion-button {
+                font-weight: 600;
+                padding: 1.25rem;
+                border-radius: 8px !important;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+            
+            .faq-accordion .accordion-button:not(.collapsed) {
+                background-color: #1abc9c;
+                color: white;
+                box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
+            }
+            
+            .faq-accordion .accordion-body {
+                padding: 1.25rem;
+                background-color: rgba(255, 255, 255, 0.95);
+                border-radius: 0 0 8px 8px;
+            }
+            
+            .faq-img {
+                border-radius: 15px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            }
         </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
-          <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="dashboard.html">BASIRU</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -341,90 +370,117 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./dashboard.html#about">VIDEO</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./dashboard.html#refleksi">QUIZ</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./dashboard.html#contact">Contact</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="q&a.html">
-                            
-                        </a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded active" href="q&a.html"><i class="fas fa-question-circle"></i> Q&A</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead text-green text-center" style="background: linear-gradient(rgba(26, 188, 156, 0.8), rgba(22, 160, 133, 0.8)), ; background-size: cover; background-position: center; background-attachment: fixed;">
-            <div class="container d-flex align-items-center flex-column">
-               
-<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-<section class="bg-light py-3 py-md-5">
-  <div class="container">
-    <div class="row gy-5 gy-lg-0 align-items-lg-center">
-      <div class="col-12 col-lg-6">
-        <img class="img-fluid rounded" loading="lazy" src="q&a/dist/img/q&a.png" alt="Apa yang bisa saya bantu?">
-      </div>
-      <div class="col-12 col-lg-6">
-        <div class="row justify-content-xl-end">
-          <div class="col-12 col-xl-11">
-            <h2 class="h1 mb-3">Apa yang bisa saya bantu?</h2>
-            <p class="lead fs-4 text-secondary mb-5">saya berharap anda akan mendapatkan jawaban dari pertanyaan yang anda butuhkan disini. Jika anda mebutuhkan bantuan lain, silahkan menghubungi saya lewat email.</p>
-            <div class="accordion accordion-flush" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Bagaimana cara mengupload praktik baik setelah menerapkan keterampilan mengajar literasi baca tulis? ?
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Mengisi gform dan mengupload video dari penerapan keterampilan mengajar literasi baca tulis di satuan PAUD masing-masing</p>
-                    <ul>
-                      
-                    </ul>
-                  </div>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section bg-light">
+            <div class="container">
+                <div class="row gy-5 gy-lg-0 align-items-lg-center">
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid rounded faq-img" loading="lazy" src="./q&a/dist/img/q&a.png" alt="Apa yang bisa saya bantu?">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row justify-content-xl-end">
+                            <div class="col-12 col-xl-11">
+                                <h2 class="h1 mb-3 text-secondary">Apa yang bisa saya bantu?</h2>
+                                <p class="lead fs-4 text-secondary mb-5">Saya berharap Anda akan mendapatkan jawaban dari pertanyaan yang Anda butuhkan di sini. Jika Anda membutuhkan bantuan lain, silahkan menghubungi saya lewat email.</p>
+                                <div class="accordion accordion-flush faq-accordion" id="accordionExample">
+                                    <div class="accordion-item mb-3 shadow-sm">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Bagaimana cara mengupload praktik baik setelah menerapkan keterampilan mengajar literasi baca tulis?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>Mengisi gform dan mengupload video dari penerapan keterampilan mengajar literasi baca tulis di satuan PAUD masing-masing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item mb-3 shadow-sm">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Apakah kami bisa mengetahui skor dari quiz yang sdh dikerjakan?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Ya, setelah menyelesaikan quiz akan ada skor yang telah Anda kerjakan.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item mb-3 shadow-sm">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Apakah kami dapat menambahkan lagu baru tentang baca tulis?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>Anda dapat menambahkan lagu tentang baca tulis di bagian praktik baik.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item mb-3 shadow-sm">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Apakah kami dapat memberikan saran terhadap penggunaan BASIRU ini?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Ya, melalui nomor WA yang tercantum di menu CONTACT US
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Apakah kami bisa mengetahui skor dari quiz yang sdh dikerjakan?
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Ya, setelah menyelesaikan quiz akan ada skor yang telah Anda kerjakan.
-                  </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location -->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            BASIRU.MY.ID
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons -->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text -->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About BASIRU</h4>
+                        <p class="lead mb-0">
+                            BASIRU is a platform dedicated to education and literacy development.
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Apakah kami dapat menambahkan lagu baru tentang baca tulis?
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Anda dapat menambahkan lagu tentang baca tulis di bagian praktik baik.</p>
-                    <ul>
-                      
-                    </ul>
-                  </div>
-               			   </div>
-              </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Apakah kami dapat memberikan saran terhadappenggunaan BASIRU ini?
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Ya, melalui nomor wa yang tercantum dimenu CONTACT US
-                  </div>
-                </div>
-			</div>
-          </div>
+            </div>
+        </footer>
+        
+        <!-- Copyright Section -->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; BASIRU.MY.ID 2025</small></div>
         </div>
-      </div>
-    </div>
-	
-  <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </div>
-</section>
-                 
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

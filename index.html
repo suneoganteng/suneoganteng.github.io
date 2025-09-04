@@ -207,11 +207,35 @@
       <!-- Heading -->
       <h1 class="masthead-heading text-uppercase mb-0">BASIRU</h1>
       <!-- Divider -->
-     <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
+     <!-- Divider dengan bintang di tengah -->
+<div class="divider-custom divider-light"> 
+    <div class="divider-custom-line"></div>
+    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+    <div class="divider-custom-line"></div>
+</div>
+
+<style>
+.divider-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.divider-custom-line {
+    width: 100px;              /* panjang garis */
+    height: 3px;               /* tebal garis */
+    background-color: #fff;    /* warna garis (bisa diganti) */
+    border-radius: 2px;
+}
+
+.divider-custom-icon {
+    margin: 0 15px;            /* jarak kiri-kanan bintang */
+    color: #fff;               /* warna bintang */
+    font-size: 1.5rem;
+}
+</style>
+
       <!-- Subheading -->
       <p class="masthead-subheading font-weight-light mb-4">Pengembangan Kompetensi Guru</p>
 
@@ -307,5 +331,6 @@
   </script>
 </body>
 </html>
+
 
 

@@ -204,6 +204,29 @@
             .portfolio-item-caption-content {
                 font-size: 1.5rem;
             }
+
+            /* Accordion styling for video sections */
+            .accordion-button:not(.collapsed) {
+                background-color: #1abc9c;
+                color: white;
+            }
+
+            .accordion-button:focus {
+                box-shadow: none;
+                border-color: rgba(0,0,0,.125);
+            }
+
+            .video-accordion .accordion-item {
+                margin-bottom: 1rem;
+                border: 1px solid #dee2e6;
+                border-radius: 0.5rem;
+            }
+
+            .video-description {
+                padding: 1.5rem;
+                background-color: #f8f9fa;
+                border-top: 1px solid #dee2e6;
+            }
         </style>
     </head>
     <body id="page-top">
@@ -249,7 +272,10 @@
             </div>
         </header>
 
-<!-- About Section Heading-->
+        <!-- Video Section -->
+        <section class="page-section bg-primary text-white mb-0">
+            <div class="container">
+                <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white">Video Pembelajaran</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -257,16 +283,92 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-        <div class="row mb-3 justify-content-center">
-                    <div class="col-12 text-center">
-
-                         <iframe width="560" height="315" src="https://www.youtube.com/embed/Jk1DC-l8J4M" title="TK Bintaro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/k9TaCWwLv2U" title="TK Besuki 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				
-                <<iframe width="560" height="315" src="https://www.youtube.com/embed/Z5nR7k57A6c" title="TK Besuki1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				  <iframe width="560" height="315" src="https://www.youtube.com/embed/WXd1Q7LD0C4?si=c7BVLeji5rXvM7vD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 10px;"></iframe>
-		</section>
+                
+                <!-- Video Accordion -->
+                <div class="accordion video-accordion" id="videoAccordion">
+                    <!-- Video 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-video me-2"></i> TK Bintaro - Praktik Baik Pembelajaran
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#videoAccordion">
+                            <div class="accordion-body p-0">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/Jk1DC-l8J4M" title="TK Bintaro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-description">
+                                    <h5>Deskripsi Video</h5>
+                                    <p>Video ini menunjukkan praktik baik pembelajaran di TK Bintaro. Guru menggunakan pendekatan yang menyenangkan dan sesuai dengan perkembangan anak usia dini. Perhatikan bagaimana interaksi antara guru dan anak terjalin dengan baik.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fas fa-video me-2"></i> TK Besuki 2 - Metode Pembelajaran Kreatif
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#videoAccordion">
+                            <div class="accordion-body p-0">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/k9TaCWwLv2U" title="TK Besuki 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-description">
+                                    <h5>Deskripsi Video</h5>
+                                    <p>TK Besuki 2 menerapkan metode pembelajaran kreatif yang mendorong anak untuk aktif bereksplorasi. Video ini menunjukkan bagaimana guru memfasilitasi pembelajaran dengan memanfaatkan lingkungan sekitar sebagai sumber belajar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fas fa-video me-2"></i> TK Besuki 1 - Pembelajaran Berbasis Permainan
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#videoAccordion">
+                            <div class="accordion-body p-0">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/Z5nR7k57A6c" title="TK Besuki1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-description">
+                                    <h5>Deskripsi Video</h5>
+                                    <p>TK Besuki 1 menerapkan pembelajaran berbasis permainan yang menyenangkan bagi anak. Dalam video ini dapat dilihat bagaimana anak-anak belajar sambil bermain, mengembangkan kemampuan sosial, motorik, dan kognitif secara terintegrasi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="fas fa-video me-2"></i> Pembelajaran Outdoor - Eksplorasi Alam
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#videoAccordion">
+                            <div class="accordion-body p-0">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/WXd1Q7LD0C4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-description">
+                                    <h5>Deskripsi Video</h5>
+                                    <p>Video ini menunjukkan kegiatan pembelajaran outdoor dimana anak-anak diajak untuk bereksplorasi dengan alam sekitar. Pembelajaran outdoor membantu mengembangkan rasa ingin tahu, keberanian, dan kecintaan pada lingkungan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Video Accordion -->
+            </div>
+        </section>
 
         <!-- Footer-->
         <footer class="footer text-center">
